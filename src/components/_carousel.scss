@@ -46,7 +46,8 @@
 
 .carousel {
     position: relative;
-    width: 100%;
+    display: inline-block;
+    width: 25%;
 
 	// only applying box sizing inside the plugin so it won't break any style
 	* {
@@ -96,7 +97,7 @@
 
 	.thumb {
 		@include transition(border, .15s, ease-in);
-		display: inline-block;
+		display: block;
 		width: 80px;
 		margin-right: 6px;
 		white-space: nowrap;
@@ -117,7 +118,10 @@
 	&.carousel-slider {
 		position: relative;
 		margin: 0;
+		display: inline-block;
+		width: 75% !important;
 		overflow: hidden;
+		float: right;
 
 		// adjusting the arrows for the slider
 		.control-arrow {
